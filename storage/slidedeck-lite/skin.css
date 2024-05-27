@@ -1,0 +1,89 @@
+/*
+Skin Name: Voyager
+Skin URI: http://www.slidedeck.com/
+Skin Type: fluid
+Description: Clean fluid skin with dark background
+Version: 1.0
+Author: digital-telepathy
+Designer: Chan Karunamuni
+Author URI: http://www.dtelepathy.com/
+Tags: flexible, white, black, blue
+*/
+
+.skin-voyager dl.slidedeck {
+	margin: auto;
+	margin-top: 0;
+	width:930px;
+	height:333px;
+	/*border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #666;*/
+}
+			
+.skin-voyager dl.slidedeck dd {
+	padding: 3px 0px 0px 0px;
+	background: url('slides.png') center bottom repeat-x #101115;
+	background: -webkit-gradient(linear, left top, left bottom, from(#101115), to(#545966));
+	background: -moz-linear-gradient(top,  #101115,  #545966);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#101115', endColorstr='#545966');
+	color: #fff;
+	/*border-bottom: 3px solid #666666;*/
+}
+.skin-voyager dl.slidedeck dd img, a  {
+	outline:none !important;
+	border:none !important;
+}
+.skin-voyager dl.slidedeck dt {
+    position: relative;
+	cursor: pointer;
+	height: 65px;
+	line-height: 60px;
+	font-size: 30px !important;
+	font-family: "GothamHTF Book", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+    font-weight: normal !important;
+	letter-spacing: 1px;
+	color: #666666 !important;
+	text-align: center !important;
+	/*text-shadow: -1px -1px 1px #d2d3da;
+	background: url('spines.png') center 0 no-repeat;*/
+	border-top: 1px solid #999999 !important;
+}
+.skin-voyager dl.slidedeck dt:hover {
+	background: url('spines.png') center -169px no-repeat;
+	color: #999999 !important;
+}
+.skin-voyager dl.slidedeck dt.active, .slidedeck dt.active:hover {
+	cursor: default;
+	color: #fff !important;
+	height:65px;
+	text-shadow: 0 0 7px #fff;
+	/*background: url('spines.png') center -83px no-repeat;
+	border-left: 3px solid black !important;
+	border-bottom: 2px solid #4d515e;*/
+}
+
+.skin-voyager dl.slidedeck dt .index {
+	font-size: 24px;
+	font-weight: bold;
+	color: #666 !important;
+	margin-left: 10px;
+	margin-bottom:10px;
+	text-shadow: -1px 1px 1px #d2d3da;
+	visibility: hidden;
+	 
+}
+
+.skin-voyager dl.slidedeck dt:hover .index { color:#000 !important; }
+.skin-voyager dl.slidedeck dt.active .index {
+    text-shadow: 0 0 7px #fff;
+    color: #fff !important;
+}
+
+.skin-voyager dl.slidedeck .activeCorner {
+	margin-left: 0;
+    margin-top: -10;
+	background-image: url('corner.png');
+	width: 22px;
+	height: 42px;
+	top: 82% !important;
+}
