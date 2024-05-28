@@ -5,7 +5,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Guillermo Ortiz</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="/css/carousel.css" rel="stylesheet" type="text/css" media="screen"/>
   <link rel="icon" type="image/png" href="/images/logo-5.png" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
@@ -31,9 +32,37 @@
           offering,<br /> the services I can provide and the energy behind it. </h2>
       </div>
     </div>
+
+    <section class="footer-grid-item">
+<!--       <h2>Our Facility</h2>
+ -->
+      <div id="product-description-wrapper">
+
+        <div class="product-item carousel-add-to-cart">
+
+          <div class="carousel">
+            <div class="carousel-images">
+              <span class="arrow" id="prev" onclick="changeSlide(-1)">&#10094;</span>
+              <img src="/images/slide-curanderismo.jpg" id="main-image" alt="Main Image">
+              <span class="arrow" id="next" onclick="changeSlide(1)">&#10095;</span>
+            </div>
+
+            <div class="thumbnail-container">
+              <img src="/images/slide-curanderismo.jpg" class="thumbnail active" alt="Thumbnail 1" onclick="changeImage(this)">
+              <img src="/images/slide-movement.jpg" class="thumbnail" alt="Thumbnail 2" onclick="changeImage(this)">
+              <img src="/images/slide-ministry.jpg" class="thumbnail" alt="Thumbnail 3" onclick="changeImage(this)">
+              <img src="/images/slide-ortiz-tile.jpg" class="thumbnail" alt="Thumbnail 3" onclick="changeImage(this)">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+<!-- 
     <div class="skin-voyager">
       <dl class="slidedeck">
-
         <dd>
           <div align="center" class="marg-topbot24"><a href="tile.html"><img src="images/slide-ortiz-tile.jpg" /></a>
           </div>
@@ -71,7 +100,7 @@
           </div>
         </dd>
       </dl>
-    </div>
+    </div> -->
 <!--     <script type="text/javascript">
       // The most basic implementation using the default options
       $('.slidedeck').slidedeck();
@@ -141,6 +170,8 @@
       <p class="tone-down-padtop">Copyright &copy; 2011 Wm. Guillermo Ortiz All rights reserved</p>
     </div>
   </div>
+
+  <script defer src="/js/carousel.js"></script>
 
 
 </body>
