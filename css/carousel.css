@@ -13,9 +13,10 @@
     grid-template-rows: auto;
     gap: 20px;
     justify-content: space-around;  */
-    width: 90%;
+    width: 100%;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .add-to-cart {
@@ -75,7 +76,7 @@
 }
 
 #main-image {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(67, 67, 67, 0.2), 0 6px 20px 0 rgba(67, 67, 67, 0.19); /* Multi-layered shadow for depth */
@@ -87,11 +88,12 @@
 }
 
 .thumbnail {
-    max-width: 140px;
+    max-width: 120px;
     height: auto;
     cursor: pointer;
     opacity: 0.6;
     margin: 0 5px;
+    margin-top: 30px;
     transition: opacity 0.3s;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(67, 67, 67, 0.2), 0 6px 20px 0 rgba(67, 67, 67, 0.19); /* Multi-layered shadow for depth */
