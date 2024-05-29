@@ -206,7 +206,7 @@ section {
   --medium-sage: #8e927c8f;
   --dark-sage: #31473ac0;
   --medium-brown: #927c83;
-  --topnav: #717564;
+  --topnav: #657564;
 }
 
 a {
@@ -398,7 +398,7 @@ table {
 }
 #topnav ul li a:hover {
   color: #ffffff;
-  background-color: #97724f9b;
+  background-color: #476d339b;
 
 /*   background-color: var(--light-sage);
  */  text-decoration: none;
@@ -407,7 +407,7 @@ table {
 .current {
   color: #dbd2c1;
   color: #ffffff;
-  background-color: #97724f9b;
+  background-color: #476d339b;
 /*   background-color: var(--light-sage);
  */  /*text-decoration: line-through !important;*/
   padding: 10px 7px 10px 8px !important;
