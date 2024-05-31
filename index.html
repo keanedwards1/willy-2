@@ -36,29 +36,35 @@
     <section class="footer-grid-item">
 <!--       <h2>Our Facility</h2>
  -->
-      <div id="product-description-wrapper">
+ <div id="product-description-wrapper">
 
-        <div class="product-item carousel-add-to-cart">
+  <div class="product-item carousel-add-to-cart">
 
-          <div class="carousel">
-            <div class="carousel-images">
+      <div class="carousel">
+          <div class="carousel-images">
               <span class="arrow" id="prev" onclick="changeSlide(-1)">&#10094;</span>
-              <img src="/images/slide-curanderismo.jpg" id="main-image" alt="Main Image">
+              <a id="main-image-link" href="/curanderismo.html">
+                  <img src="/images/slide-curanderismo.jpg" id="main-image" alt="Main Image">
+              </a>
               <span class="arrow" id="next" onclick="changeSlide(1)">&#10095;</span>
-            </div>
-
-            <div class="thumbnail-container">
-              <img src="/images/slide-curanderismo.jpg" class="thumbnail active" alt="Thumbnail 1" onclick="changeImage(this)">
-              <img src="/images/slide-movement.jpg" class="thumbnail" alt="Thumbnail 2" onclick="changeImage(this)">
-              <img src="/images/slide-ministry.jpg" class="thumbnail" alt="Thumbnail 3" onclick="changeImage(this)">
-              <img src="/images/slide-ortiz-tile.jpg" class="thumbnail" alt="Thumbnail 3" onclick="changeImage(this)">
-            </div>
           </div>
 
-        </div>
-
+          <div class="thumbnail-container">
+              <img src="/images/slide-curanderismo.jpg" class="thumbnail active" data-href="/curanderismo.html" alt="Thumbnail 1" onclick="changeImage(this)">
+              <img src="/images/slide-movement-3.png" class="thumbnail" data-href="/movement.html" alt="Thumbnail 2" onclick="changeImage(this)">
+              <img src="/images/slide-ministry.jpg" class="thumbnail" data-href="/ministry.html" alt="Thumbnail 3" onclick="changeImage(this)">
+<!--               <img src="/images/slide-ortiz-tile.jpg" class="thumbnail" data-href="/images/slide-ortiz-tile.jpg" alt="Thumbnail 4" onclick="changeImage(this)">
+ -->          </div>
       </div>
+
+  </div>
+
+</div>
     </section>
+
+
+
+
 
 <!-- 
     <div class="skin-voyager">
@@ -172,6 +178,7 @@
   </div>
 
   <script defer src="/js/carousel.js"></script>
+  <script defer src="/js/home-hover-text.js"></script>
 
 
 </body>

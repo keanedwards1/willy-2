@@ -1,8 +1,6 @@
 function changeImage(element) {
-    // Change the main image to match the thumbnail
     document.getElementById('main-image').src = element.src;
-
-    // Update the 'active' class on the clicked thumbnail
+    document.getElementById('main-image-link').href = element.dataset.href;
     var thumbnails = document.getElementsByClassName('thumbnail');
     for (var i = 0; i < thumbnails.length; i++) {
         thumbnails[i].classList.remove('active');
@@ -27,15 +25,6 @@ function changeSlide(step) {
 
     // Simulate a click on the next thumbnail
     images[nextIndex].click();
-}
-
-function changeImage(element) {
-    document.getElementById('main-image').src = element.src;
-    var thumbnails = document.getElementsByClassName('thumbnail');
-    for (var i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].classList.remove('active');
-    }
-    element.classList.add('active');
 }
 
 // Initialize the first image as active

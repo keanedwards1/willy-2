@@ -116,7 +116,7 @@
     font-size: 24px;
     transition: background-color 0.2s ease, opacity 0.35s ease;
     border-radius: 50%;
-    background-color: #656565; /* Light grey background */
+    background-color: #656565b2; /* Light grey background */
     text-align: center;
     line-height: 40px; /* To vertically align the arrow symbol, should match the height */
     opacity: 0.5; /* Starting opacity */
@@ -134,7 +134,7 @@
 }
 
 .arrow:hover {
-    background-color: #676767; /* Darker grey on hover */
+    background-color: #676767c5; /* Darker grey on hover */
     opacity: 0.8; /* Full opacity on hover */
 }
 
@@ -143,3 +143,5 @@
     height: auto;
     display: block; /* Removes bottom margin/whitespace */
 }
+
+  
