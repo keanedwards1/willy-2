@@ -203,10 +203,12 @@ section {
   --light-sage: #e4deda;
   --faded-sage: #ebefdf;
   --background-sage: #caccc6;
-  --medium-sage: #8e927c8f;
-  --dark-sage: #31473ac0;
+  --medium-sage: #9aa07f8f;
+  --medium-sage: #9dad92a3;
+  --dark-sage: #34493de4;
   --medium-brown: #927c83;
-  --topnav: #657564;
+  --topnav: #839682;
+  --top-nav-hover: #5d74509b;
 }
 
 a {
@@ -398,7 +400,7 @@ table {
 }
 #topnav ul li a:hover {
   color: #ffffff;
-  background-color: #476d339b;
+  background-color: var(--top-nav-hover);
 
 /*   background-color: var(--light-sage);
  */  text-decoration: none;
@@ -407,7 +409,7 @@ table {
 .current {
   color: #dbd2c1;
   color: #ffffff;
-  background-color: #476d339b;
+  background-color: var(--top-nav-hover);
 /*   background-color: var(--light-sage);
  */  /*text-decoration: line-through !important;*/
   padding: 10px 7px 10px 8px !important;
