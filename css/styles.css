@@ -209,7 +209,7 @@ section {
   --medium-brown: #927c83;
   --topnav: #8ba57dec;
   --top-nav-hover: #728d63ec;
-  --text-color: #ebefdf;
+  --text-color: rgb(70, 72, 64);
 }
 
 a {
@@ -221,7 +221,7 @@ body {
  */
   background-repeat: repeat-x;
   background-color: var(--background-sage);
-  color: var(--faded-sage);
+  color: var(--text-color);
   line-height: 1;
 }
 ol,
@@ -445,7 +445,7 @@ table {
 .signature {
   font-family: "Great Vibes", cursive;
   font-size: 28px;
-  color: var(--faded-sage);
+  color: var(--text-color);
   flex-direction: flex-start;
   top: 10px;
   left: 20px;
@@ -456,11 +456,15 @@ table {
   margin-right: -60px;
 }
 
+.italic {
+  font-style: italic !important;
+}
+
 .title {
   font-family: "Playfair Display", sans-serif;
   font-size: 32px;
   color: #d1b081;
-  color: var(--faded-sage);
+  color: var(--text-color);
   align-self: center;
   flex-grow: 1;
   text-align: center;
@@ -468,7 +472,7 @@ table {
   margin-top: -40px;
   font-size: 50px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
-  margin-bottom: -2px;
+  margin-bottom: -4px;
 }
 
 hr {
@@ -484,7 +488,7 @@ hr {
   background-image: linear-gradient(
     to right,
     transparent,
-    var(--light-sage),
+    var(--text-color),
     transparent
   );
   margin: 0;
@@ -697,6 +701,8 @@ div.box .button {
   border-radius: 10px;
   transition: all 250ms;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 div.box .button:hover {
