@@ -593,8 +593,6 @@ hr {
 #content a:visited,
 #content a:hover,
 #content a:active {
-  font-size: 1.1em;
-  line-height: 1.5em;
   margin-bottom: 0;
   color: inherit;
   font-style: italic;
