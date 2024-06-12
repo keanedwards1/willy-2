@@ -616,6 +616,10 @@ hr {
   margin-top: 75px !important;
 }
 
+.top-10 {
+  margin-top: 10px;
+}
+
 div.box {
   margin: 0 auto;
   width: 700px;
@@ -796,10 +800,8 @@ div.box textarea {
 }
 .img-left {
   float: left;
-  margin-top: 0px;
   margin-right: 30px;
   margin-bottom: 10px;
-  margin-left: 0px;
 }
 .img-right-vert-mar {
   float: right;
