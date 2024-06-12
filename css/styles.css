@@ -803,6 +803,10 @@ div.box textarea {
   margin-right: 30px;
   margin-bottom: 10px;
 }
+.bigger-text {
+  font-size: 28px !important;
+  font-weight: 500;
+}
 .img-right-vert-mar {
   float: right;
   margin-top: 70px;
