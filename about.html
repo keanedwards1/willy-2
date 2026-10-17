@@ -4,33 +4,37 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | Guillermo Ortiz</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/styles.css?v=20261017" rel="stylesheet" type="text/css" media="screen" />
   <link rel="icon" type="image/png" href="/images/logo-5.png" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
     rel="stylesheet">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js" } }
+  </script>
 </head>
 
 <body>
   <div id="wrap" class="about">
     <div id="short-header">
       <div id="topnav">
-        <ul>
+        <a class="site-logo" href="index.html" aria-label="Guillermo Ortiz home">Guillermo Ortiz</a>
+<button class="mobile-menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-navigation" aria-label="Primary navigation">
           <li><a href="index.html">home</a></li>
-          <li class="current">about</li>
+          <li><a href="about.html" aria-current="page">about</a></li>
           <li><a href="curanderismo.html">curanderismo</a></li>
           <li><a href="movement.html">movement</a></li>
           <li><a href="ministry.html">ministry</a></li>
           <li><a href="contact.html">contact</a></li>
-        </ul>
+</ul>
       </div>
     </div>
 
     <div class="title-container">
-      <div class="title-contents">
-        <!--         <span class="signature">Wm Guillermo Ortiz</span>
- -->
-      </div>
       <span class="title">About</span>
       <hr>
     </div>
@@ -208,6 +212,9 @@
     </div>
 
 
+  <script defer src="/js/scroll-reveal.js"></script>
+  <script type="module" src="/js/scroll-scene.js"></script>
+  <script defer src="/js/mobile-menu.js"></script>
 </body>
 
 </html>

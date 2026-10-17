@@ -1,0 +1,36 @@
+:root {
+  color-scheme: light;
+
+  /* Warm paper, field greens, and the clay tones already found in the site. */
+  --paper: #f4efe4;
+  --paper-light: #fffaf2;
+  --paper-deep: #e8dfce;
+  --ink: #2d3028;
+  --ink-soft: #4c5147;
+  --muted: #716f63;
+  --forest: #34493d;
+  --forest-light: #536a58;
+  --sage: #8ba57d;
+  --sage-light: #dbe3d3;
+  --sage-pale: #ebefdf;
+  --clay: #a45529;
+  --terracotta: #bc6d32;
+  --ochre: #d59361;
+  --gold: #d1b081;
+  --line: #d8cebd;
+  --white: #fffdf8;
+  --shadow: rgb(45 48 40 / 12%);
+
+  /* Keep the original palette available for future tuning. */
+  --original-sage: #dbe3d3;
+  --original-sage-dark: #34493de4;
+  --original-sage-mid: #a9bf9cec;
+  --original-clay: #bc6d32;
+  --original-clay-dark: #a45529;
+  --original-clay-light: #d18750;
+  --original-brown: #927c83;
+  --original-blue: #467a96;
+  --original-blue-dark: #2d4a5b;
+  --original-blue-light: #d0e7f2;
+  --original-gold: #d1b081;
+}

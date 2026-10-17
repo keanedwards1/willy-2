@@ -4,9 +4,9 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Guillermo Ortiz</title>
   <link href="/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
-  <link href="/css/carousel.css" rel="stylesheet" type="text/css" media="screen"/>
   <link rel="icon" type="image/png" href="/images/logo-5.png" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
@@ -16,14 +16,18 @@
   <div id="wrap" class="index">
     <div id="header">
       <div id="topnav">
-        <ul>
-          <li class="current">home</li>
+        <a class="site-logo" href="index.html" aria-label="Guillermo Ortiz home">Guillermo Ortiz</a>
+        <button class="mobile-menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primary-navigation" aria-label="Primary navigation">
+          <li><a href="index.html" aria-current="page">home</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="curanderismo.html">curanderismo</a></li>
           <li><a href="movement.html">movement</a></li>
           <li><a href="ministry.html">ministry</a></li>
           <li><a href="contact.html">contact</a></li>
-        </ul>
+</ul>
       </div>
       <div id="masthead">
         <h2 class="bigger-text italic">
@@ -32,33 +36,62 @@
       </div>
     </div>
 
-    <section class="footer-grid-item">
-<!--       <h2>Our Facility</h2>
- -->
- <div id="product-description-wrapper">
-
-  <div class="product-item carousel-add-to-cart">
-
-      <div class="carousel">
-          <div class="carousel-images">
-              <span class="arrow" id="prev" onclick="changeSlide(-1)">&#10094;</span>
-              <a id="main-image-link" href="/curanderismo.html">
-                  <img src="/images/slide-cu.png" id="main-image" alt="Main Image">
-              </a>
-              <span class="arrow" id="next" onclick="changeSlide(1)">&#10095;</span>
-          </div>
-
-          <div class="thumbnail-container">
-              <img src="/images/slide-cu.png" class="thumbnail active" data-href="/curanderismo.html" alt="Thumbnail 1" onclick="changeImage(this)">
-              <img src="/images/slide-mo2.png" class="thumbnail" data-href="/movement.html" alt="Thumbnail 2" onclick="changeImage(this)">
-              <img src="/images/slide-ministry.jpg" class="thumbnail" data-href="/ministry.html" alt="Thumbnail 3" onclick="changeImage(this)">
-<!--               <img src="/images/slide-ortiz-tile.jpg" class="thumbnail" data-href="/images/slide-ortiz-tile.jpg" alt="Thumbnail 4" onclick="changeImage(this)">
- -->          </div>
+    <section class="service-carousel" aria-label="Explore Guillermo's work">
+      <div class="service-carousel__heading">
+        <span class="service-carousel__eyebrow">WAYS TO WORK TOGETHER</span>
       </div>
-
-  </div>
-
-</div>
+      <div class="service-carousel__stage">
+        <button class="service-carousel__arrow service-carousel__arrow--previous" type="button" aria-label="Previous service" data-service-step="-1">‹</button>
+        <div class="service-carousel__slides" aria-live="polite" aria-atomic="true">
+          <a class="service-slide service-slide--curanderismo is-active" href="curanderismo.html" aria-labelledby="curanderismo-title" data-service-slide="0">
+            <div class="service-slide__copy">
+              <h2 id="curanderismo-title">Curanderismo</h2>
+              <p>Curanderismo is the traditional Mexican folk medicine that addresses the person’s physical, psychological &amp; spiritual needs. The goal is sustaining health by creating a balance between the individual and their environment.</p>
+              <p class="service-slide__note">Guillermo offers private sessions at his East Bay Home.</p>
+              <span class="service-slide__link">click here for more info...</span>
+            </div>
+            <div class="service-slide__art service-slide__art--curanderismo">
+              <img src="/images/curanderismo-emblem.png" alt="Colorful traditional Mexican Curanderismo emblem" />
+            </div>
+          </a>
+          <a class="service-slide service-slide--movement" href="movement.html" aria-labelledby="movement-title" data-service-slide="1" hidden>
+            <div class="service-slide__copy">
+              <h2 id="movement-title">Movement</h2>
+              <p>As a Movement teacher for over 45 years (tai chi ch’uan, dance &amp; various embodiment practices) Wm Guillermo offers sessions that provide an in-depth approach that identify one’s movement patterns, develop a greater sense of grounding, balance and alignment and cultivate an effective &amp; fun daily practice.</p>
+              <span class="service-slide__link">click for more info...</span>
+            </div>
+            <div class="service-slide__art service-slide__art--movement">
+              <img src="/images/movement-emblem.svg" alt="Black yin-yang movement symbol" />
+            </div>
+          </a>
+          <a class="service-slide service-slide--ministry" href="ministry.html" aria-labelledby="ministry-title" data-service-slide="2" hidden>
+            <div class="service-slide__copy">
+              <h2 id="ministry-title">Ministry</h2>
+              <p>Wm Guillermo Ortiz is an ordained minister who received his Master of Divinity in 2006 from the Seminary of Spiritual Peacemaking in Ashland, Oregon.</p>
+              <p class="service-slide__note">He conducts weddings, coming-of-age initiations, last rites and public ceremonies.</p>
+              <span class="service-slide__link">click for more info...</span>
+            </div>
+            <div class="service-slide__art service-slide__art--ministry">
+              <img src="/images/ministry-emblem.png" alt="Blue and gold geometric ministry emblem" />
+            </div>
+          </a>
+        </div>
+        <button class="service-carousel__arrow service-carousel__arrow--next" type="button" aria-label="Next service" data-service-step="1">›</button>
+      </div>
+      <div class="service-carousel__navigation" role="group" aria-label="Choose a service">
+        <button class="service-carousel__thumb is-active" type="button" aria-pressed="true" data-service-index="0">
+          <img src="/images/curanderismo-emblem.png" alt="" />
+          <span>Curanderismo</span>
+        </button>
+        <button class="service-carousel__thumb" type="button" aria-pressed="false" data-service-index="1">
+          <img src="/images/movement-emblem.svg" alt="" />
+          <span>Movement</span>
+        </button>
+        <button class="service-carousel__thumb" type="button" aria-pressed="false" data-service-index="2">
+          <img src="/images/ministry-emblem.png" alt="" />
+          <span>Ministry</span>
+        </button>
+      </div>
     </section>
 
 
@@ -175,10 +208,9 @@
     </div>
   </div>
 
-  <script defer src="/js/carousel.js"></script>
-  <script defer src="/js/home-hover-text.js"></script>
-
-
+  <script defer src="/js/service-carousel.js"></script>
+  <script defer src="/js/scroll-reveal.js"></script>
+  <script defer src="/js/mobile-menu.js"></script>
 </body>
 
 </html>
