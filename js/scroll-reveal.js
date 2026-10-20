@@ -12,7 +12,6 @@
     ...document.querySelectorAll(
       '.service-carousel__stage, .service-carousel__navigation, #footer'
     ),
-    ...document.querySelectorAll('#wrap.contact form'),
   ]);
 
   if (revealTargets.length === 0) return;
@@ -40,4 +39,10 @@
 
     observer.observe(target);
   });
+
+  const contactForm = document.querySelector('#wrap.contact form');
+  if (contactForm) {
+    contactForm.classList.add('contact-form-fade');
+    observer.observe(contactForm);
+  }
 })();

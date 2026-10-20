@@ -168,6 +168,15 @@ textarea:focus-visible {
     opacity: 1;
   }
 
+  .contact-form-fade {
+    opacity: 0;
+    transition: opacity 950ms ease-out;
+  }
+
+  .contact-form-fade.is-visible {
+    opacity: 1;
+  }
+
   .scroll-reveal.scroll-slide-in--left,
   .scroll-reveal.scroll-slide-in--right {
     transition: opacity 1000ms 120ms ease-out,
