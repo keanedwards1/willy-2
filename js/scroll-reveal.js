@@ -12,6 +12,7 @@
     ...document.querySelectorAll(
       '.service-carousel__stage, .service-carousel__navigation, #footer'
     ),
+    ...document.querySelectorAll('#wrap.contact form'),
   ]);
 
   if (revealTargets.length === 0) return;
