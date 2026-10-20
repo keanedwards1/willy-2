@@ -36,6 +36,8 @@ body {
 }
 
 .scroll-scene {
+  /* Temporarily hidden while reviewing the page layout. */
+  display: none;
   --scene-opacity: 0.52;
   position: fixed;
   inset: 0;
